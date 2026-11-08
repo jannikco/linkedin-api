@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "ea33908e4d5e10508739f28e11abf708e11f3117f1108b904229eeeb00079e55",
+  "sourceRevision": "4c2340118c4661ca64b21b66e7f7dae6176e0b8b3a9a20b0746129ca1090bfb7",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
@@ -27,7 +27,7 @@
   "artifactType": "workflow",
   "utility": {
     "problem": "Inspect connected profile status and read stored leads through LeadAdapter.",
-    "output": "Documented LeadAdapter API results"
+    "output": "Authenticated LeadAdapter results, review reports and resumable research-to-CRM workflows"
   },
   "capabilityEvidence": {
     "local": {
@@ -37,7 +37,7 @@
           "name": "get_extension_status_get",
           "level": "Tested",
           "evidenceRefs": [
-            "Standalone functional API/compiler contract tests"
+            "SDK/agent/workflow contract fixtures; no live provider execution"
           ],
           "method": "contract-fixture"
         },
@@ -45,13 +45,13 @@
           "name": "list_leads_get",
           "level": "Tested",
           "evidenceRefs": [
-            "Standalone functional API/compiler contract tests"
+            "SDK/agent/workflow contract fixtures; no live provider execution"
           ],
           "method": "contract-fixture"
         }
       ],
       "evidenceRefs": [
-        "Standalone functional API/compiler contract tests"
+        "SDK/agent/workflow contract fixtures; no live provider execution"
       ],
       "mode": "local"
     },
@@ -61,5 +61,8 @@
       "evidenceRefs": [],
       "mode": "managed"
     }
-  }
+  },
+  "agentReady": true,
+  "version": "0.2.0",
+  "executionAuthority": "leadadapter-api"
 }
