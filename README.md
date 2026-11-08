@@ -22,7 +22,7 @@ Selected operation IDs: get_extension_status_get, list_leads_get. Review integra
 
 ## Managed service
 
-[Continue with LeadAdapter](https://leadadapter.com/register?utm_source=github&utm_campaign=github-linkedin-api). This repository is maintained by the integration team and does not imply endorsement by LinkedIn or other providers.
+[Continue with LeadAdapter](https://leadadapter.com/github/start?integration=linkedin-api&utm_source=github&utm_campaign=github-linkedin-api). This repository is maintained by the integration team and does not imply endorsement by LinkedIn or other providers.
 
 ## Provenance and support
 

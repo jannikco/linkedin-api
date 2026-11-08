@@ -23,6 +23,45 @@
     "list_leads_get"
   ],
   "attributionSlug": "github-linkedin-api",
+  "qualityVersion": 2,
+  "artifactType": "workflow",
+  "utility": {
+    "problem": "Inspect connected profile status and read stored leads through LeadAdapter.",
+    "output": "Documented LeadAdapter API results"
+  },
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "get_extension_status_get",
+          "level": "Tested",
+          "evidenceRefs": [
+            "Standalone functional API/compiler contract tests"
+          ],
+          "method": "contract-fixture"
+        },
+        {
+          "name": "list_leads_get",
+          "level": "Tested",
+          "evidenceRefs": [
+            "Standalone functional API/compiler contract tests"
+          ],
+          "method": "contract-fixture"
+        }
+      ],
+      "evidenceRefs": [
+        "Standalone functional API/compiler contract tests"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  },
   "factory": "leadadapter-pipmcp",
   "generatorVersion": 1
 }
