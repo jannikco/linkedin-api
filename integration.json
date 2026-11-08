@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "aaf56222440778a9b67a1e1ffbb3445850badf662b2ca475a4ef344c4f45c50e",
+  "sourceRevision": "0c82d556c91b3560d32ed6acc9c2140973323b96f8ae04e031d17014e5f7c279",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
@@ -17,7 +17,7 @@
   "kind": "leadadapter-recipe",
   "product": "leadadapter",
   "title": "LinkedIn API quickstart",
-  "description": "Inspect connected profile status and read stored leads through LeadAdapter.",
+  "description": "LinkedIn API for AI agents and developers: people search, profiles, post engagement, leads and reviewed CRM workflows with one LeadAdapter API key.",
   "operationIds": [
     "get_extension_status_get",
     "list_leads_get"
@@ -26,7 +26,7 @@
   "qualityVersion": 2,
   "artifactType": "workflow",
   "utility": {
-    "problem": "Inspect connected profile status and read stored leads through LeadAdapter.",
+    "problem": "LinkedIn API for AI agents and developers: people search, profiles, post engagement, leads and reviewed CRM workflows with one LeadAdapter API key.",
     "output": "Authenticated LeadAdapter results, review reports and resumable research-to-CRM workflows"
   },
   "capabilityEvidence": {
@@ -63,6 +63,6 @@
     }
   },
   "agentReady": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "executionAuthority": "leadadapter-api"
 }

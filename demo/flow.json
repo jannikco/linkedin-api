@@ -1,0 +1,49 @@
+{
+  "id": "research-shortlist",
+  "repositoryId": "linkedin-api",
+  "product": "leadadapter",
+  "connectorId": "linkedin",
+  "title": "Research accounts before opening a sales conversation",
+  "promise": "Turn a people-research result into an evidence-linked shortlist.",
+  "sourceRevision": "0c82d556c91b3560d32ed6acc9c2140973323b96f8ae04e031d17014e5f7c279",
+  "credential": "LEADADAPTER_API_KEY",
+  "transport": "leadadapter-rest",
+  "sourceRefs": [
+    "https://leadadapter.com/docs/api-reference?lang=en"
+  ],
+  "readTask": {
+    "intent": "Turn a people-research result into an evidence-linked shortlist.",
+    "requiredCapability": "Read-only authorized account data; discover actual names and schemas first"
+  },
+  "synthetic": {
+    "strategy": "score",
+    "field": "score",
+    "value": 70,
+    "records": [
+      {
+        "id": "synthetic-person-a",
+        "score": 88,
+        "evidence": "B2B software founder"
+      },
+      {
+        "id": "synthetic-person-b",
+        "score": 35,
+        "evidence": "Outside target market"
+      }
+    ],
+    "input": {
+      "limit": 10
+    },
+    "normalization": "Invented normalized review fields demonstrate task logic; live provider schemas and field mappings must be reviewed separately.",
+    "expectedReviewCount": 1,
+    "asOf": "2026-11-08T00:00:00Z"
+  },
+  "livePolicy": {
+    "default": "preflight-only",
+    "explicitReadSelectionRequired": true,
+    "providerWritesAllowed": false,
+    "sandboxWritesRequireSeparateApproval": true
+  },
+  "baseSourceRevision": "aaf56222440778a9b67a1e1ffbb3445850badf662b2ca475a4ef344c4f45c50e",
+  "releaseVersion": "0.2.1"
+}
