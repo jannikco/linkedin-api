@@ -1,0 +1,17 @@
+{
+  "name": "linkedin-api",
+  "version": "0.1.0",
+  "description": "Inspect connected profile status and read stored leads through LeadAdapter.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node example.mjs"
+  },
+  "exports": "./lib/index.js",
+  "types": "./lib/index.d.ts"
+}
